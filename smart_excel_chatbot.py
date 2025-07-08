@@ -12,11 +12,16 @@ with st.sidebar:
     model = st.selectbox(
         "🤖 Choose a model",
         [
-            "openai/gpt-3.5-turbo",
-            "openai/gpt-4-turbo",
-            "meta-llama/llama-3-70b-instruct",
-            "anthropic/claude-3-opus:beta",
-            "mistralai/mixtral-8x7b"
+        "meta-llama/llama-3-70b-instruct",       # 🧠 Very powerful open-source model
+        "mistralai/mixtral-8x7b",                # ⚡ Fast, efficient
+        "mistralai/mistral-7b-instruct",         # ⚡ Small, good for quick replies
+        "cohere/command-r",                      # 📊 Excellent for structured data
+        "cohere/command-r-plus",                 # 📊 Enhanced version
+        "anthropic/claude-3-haiku:beta",         # 💡 Fastest Claude model
+        "openchat/openchat-3.5-1210",            # 🗨️ Chat-tuned model
+        "nousresearch/nous-capybara-7b",         # 🐹 Balanced LLM
+        "gryphe/mythomist-7b",                   # 📚 Creative reasoning model
+        "google/gemma-7b-it" 
         ]
     )
 
