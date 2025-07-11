@@ -3,24 +3,24 @@ import pandas as pd
 import requests
 
 st.set_page_config(page_title="Excel Chatbot (OpenRouter)", page_icon="📊")
-st.title("🤖 Chat with Your Excel or CSV File")
+st.title("Chat with Your Excel or CSV File")
 
 # Sidebar for API and model
 with st.sidebar:
     st.header("🔧 Configuration")
     api_key = st.text_input("🔑 Enter your OpenRouter API Key", type="password")
     model = st.selectbox(
-        "🤖 Choose a model",
+        "Choose a model",
         [
-        "meta-llama/llama-3-70b-instruct",       # 🧠 Very powerful open-source model
-        "mistralai/mixtral-8x7b",                # ⚡ Fast, efficient
-        "mistralai/mistral-7b-instruct",         # ⚡ Small, good for quick replies
-        "cohere/command-r",                      # 📊 Excellent for structured data
-        "cohere/command-r-plus",                 # 📊 Enhanced version
-        "anthropic/claude-3-haiku:beta",         # 💡 Fastest Claude model
-        "openchat/openchat-3.5-1210",            # 🗨️ Chat-tuned model
-        "nousresearch/nous-capybara-7b",         # 🐹 Balanced LLM
-        "gryphe/mythomist-7b",                   # 📚 Creative reasoning model
+        "meta-llama/llama-3-70b-instruct",   
+        "mistralai/mixtral-8x7b",              
+        "mistralai/mistral-7b-instruct",         
+        "cohere/command-r",                      
+        "cohere/command-r-plus",                 
+        "anthropic/claude-3-haiku:beta",         
+        "openchat/openchat-3.5-1210",            
+        "nousresearch/nous-capybara-7b",         
+        "gryphe/mythomist-7b",                   
         "google/gemma-7b-it" 
         ]
     )
